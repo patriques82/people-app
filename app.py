@@ -12,6 +12,10 @@ def db_connection():
     finally:
         connection.close()
 
+@app.route("/")
+def index():
+    return redirect("/persons")
+
 @app.route("/persons")
 def persons():
     with db_connection() as conn:
