@@ -8,6 +8,10 @@
 6. python setupDB.py (setup database table Persons)
 7. python app.py (run application)
 
+### How to test
+
+1. python -m unittest discover -s tests -p 'test\_\*.py'
+
 ## TODO
 
 1. Create git repo with branch (main, dev, feature-\*)
