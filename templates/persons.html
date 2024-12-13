@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      {% for item in people %}
+      <li>{{ item[1] }}, {{ item[2] }} age: {{ item[3] }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
