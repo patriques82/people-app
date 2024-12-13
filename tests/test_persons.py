@@ -24,7 +24,7 @@ class TestPersonsView(TestConfig):
             "age": 77
         })
         self.assertEqual(response.status_code, 302)
-        
+
         response = self.app.get("/persons")
         self.assertIn(
             "<li>Göran, Tunström age: 77</li>", 
