@@ -30,5 +30,3 @@ def create_person():
         conn.commit()
         conn.close()
         return redirect("/persons")
-    
-app.run(debug = True)
